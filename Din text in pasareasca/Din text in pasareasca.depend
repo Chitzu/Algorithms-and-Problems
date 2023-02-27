@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1541403813 source:c:\users\mihai\desktop\codeblocks programs v10\din text in pasareasca\main.cpp
+	<iostream>
+	<string.h>
+	<fstream>
+

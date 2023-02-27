@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1550171703 source:c:\users\mihai\desktop\codeblocks programs v10\paranteze1\main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+

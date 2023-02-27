@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1574024816 source:c:\users\mihai\desktop\codeblocks programs v10\clasa xi\kosaraju-sharir\main.cpp
+	<iostream>
+	<fstream>
+

@@ -1,0 +1,72 @@
+#include <iostream>
+using namespace std;
+void init(int s[100], int niv);
+int succesor(int s[100],int niv);
+int sol(int S[100],int niv);
+int valid(int s[100],int niv);
+int k,st[100],n;
+void tipar(int s[100],int niv);
+int main()
+{
+    int as,ev;
+    cin>>n;
+    k=1;
+    init(st,k);
+    while(k>0)
+    {
+        do
+        {
+            as=succesor(st,k);
+            ev=valid(st,k);
+        }
+        while(as && !ev);
+        {
+            if(as)
+            {
+                if(sol(st,k))
+                {
+                    tipar(st,k);
+                }
+                else
+                {
+                    k++;
+                    init(st,k);
+                }
+            }
+            else k--;
+        }
+    }
+    return 0;
+}
+void init(int s[100], int niv)
+{
+    s[niv]=0;
+}
+int succesor(int s[100],int niv)
+{
+    if(s[niv]==n)return 0;
+    else
+    {
+        s[niv]++;
+        return 1;
+    }
+}
+int sol(int s[100],int niv)
+{
+    return (niv==n);
+}
+int valid(int s[100],int niv)
+{
+    int i,g=1;
+    for (i=1; i<niv; i++)
+    {
+        if(s[niv]==s[i])g=0;
+    }
+    return g;
+}
+void tipar(int s[100],int niv)
+{
+    for(int i=1; i<=niv; i++)
+        cout<<s[i]<<' ';
+    cout<<endl;
+}

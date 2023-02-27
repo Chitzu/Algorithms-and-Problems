@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1550002870 source:c:\users\mihai\desktop\codeblocks programs v10\formaploneza\main.cpp
+	<iostream>
+	<string.h>
+	<fstream>
+

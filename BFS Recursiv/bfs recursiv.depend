@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1575402865 source:c:\users\mihai\desktop\codeblocks programs v10\clasa xi\bfs recursiv\main.cpp
+	<iostream>
+	<fstream>
+
