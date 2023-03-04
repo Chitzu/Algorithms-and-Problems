@@ -1,0 +1,5 @@
+1. Folosind programare generică și POO, se va construi un arbore BST (fără autoechilibrare) având criteriu de ordonare a < b.
+
+a) Se va implementa o metodă care calculează adâncimea arborelui (nodul rădăcină are adâncimea 1).
+
+b) Se va implementa o metodă care verifică dacă arborele este echilibrat (pentru fiecare nod, diferența dintre adâncimile subarborelui stâng și cel drept în modul nu depășește 1)

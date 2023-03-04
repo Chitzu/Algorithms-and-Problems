@@ -1,0 +1,7 @@
+Se considera eșantioanele unui semnal stocate ca valori întregi pe 16 biti într-o lista simplu înlănțuita.
+
+Se definește metoda Prelucrare(int dif) care modifica lista după cum urmează:
+
+(a)   Se împarte semnalul (lista) in ferestre (subliste) disjuncte astfel încât pentru fiecare fereastra diferența in valoare absoluta dintre fiecare eșantion si primul eșantion al ferestrei sa fie mai mica decât argumentul dif
+
+(b)   Pentru fiecare fereastra se va păstra un singur nod al listei (celelalte se vor elimina) care conține valoarea medie a eșantioanelor din fereastra si numărul de eșantioane din fereastra.

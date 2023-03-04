@@ -1,0 +1,48 @@
+Folosind noțiuni de POO și SDA, implementați următoarea variantă de listă simplu înlănțuită.
+
+class Lista {
+
+public:
+
+    Lista();
+
+    virtual ~Lista();
+
+    void adaugaStudent(string nume, double medie);
+
+    vector<int> returneazaIndecsiSortati();
+
+};
+
+
+Metoda adaugaStudent introduce un nou student în listă.
+
+Metoda returneazaIndecsiSortati sortează toți studenții din listă descrescător după medie și în caz de egalitate, crescător după nume și apoi returnează un vector ce conține indecșii inițiali ai studenților din lista sortată. 
+
+
+Primul student adăugat în listă are indexul 0.
+
+
+Folosirea vectorilor declarați static (T v[N];) sau dinamic (T *v = new T[N];) va conduce la acordarea punctajului 0.
+
+Folosirea algoritmilor din STL va conduce la acordarea punctajului 0.
+
+Cu excepția vectorului returnat, folosirea altor containere din STL va conduce la acordarea punctajului 0.
+
+Rezolvarea cu ajutorul altor structuri (listă dublu înlănțuită, arbore dinamic, etc) va conduce la acordarea punctajului 0.
+
+
+Clasa trebuie să poată construi, sorta și distruge 10 liste ce conțin sute de mii de elemente în 30 de secunde.
+
+
+Se garantează faptul că numele studenților va fi unic.
+
+Exemplu
+Fie următorii studenți ce vor fi băgați în listă:
+mihai 7.50
+ana 9.66
+marian 8.23
+cristi 7.50
+
+Metoda returneazaIndecsiSortati va returna:
+[1, 2, 3, 0]
